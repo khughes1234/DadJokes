@@ -29,7 +29,7 @@ public class DadJokesSimulator {
         jokeButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 boolean fetchInJson = jsonCheckBox.isSelected();
-                prefs.putBoolean(PREF_KEY, fetchInJson); // Save preference
+                prefs.putBoolean(PREF_KEY, fetchInJson);
                 String joke = fetchJoke(fetchInJson);
                 JOptionPane.showMessageDialog(frame, joke);
             }
